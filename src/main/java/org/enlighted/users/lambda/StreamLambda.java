@@ -1,4 +1,4 @@
-package lambda;
+package org.enlighted.users.lambda;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,7 +8,6 @@ import javax.inject.Named;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestStreamHandler;
-
 
 @Named("stream")
 public class StreamLambda implements RequestStreamHandler {

@@ -1,4 +1,4 @@
-package lambda;
+package org.enlighted.users.lambda;
 
 public class OutputObject {
 

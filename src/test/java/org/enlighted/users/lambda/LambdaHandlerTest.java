@@ -1,4 +1,4 @@
-package lambda;
+package org.enlighted.users.lambda;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -13,10 +13,10 @@ public class LambdaHandlerTest {
     public void testSimpleLambdaSuccess() throws Exception {
         InputObject in = new InputObject();
         in.setGreeting("Hello");
-        in.setName("Stu");
         OutputObject out = LambdaClient.invoke(OutputObject.class, in);
-        Assertions.assertTrue(out.getResult().contains("Hello Stu"));
-        Assertions.assertTrue(out.getRequestId().matches("aws-request-\\d"), "Expected requestId as 'aws-request-<number>'");
+        Assertions.assertTrue(out.getResult().contains("Hello"));
+        Assertions.assertTrue(out.getRequestId().matches("aws-request-\\d"),
+                "Expected requestId as 'aws-request-<number>'");
     }
 
 }

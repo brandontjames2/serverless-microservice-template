@@ -1,18 +1,8 @@
-package lambda;
+package org.enlighted.users.lambda;
 
 public class InputObject {
 
-    private String name;
     private String greeting;
-
-    public String getName() {
-        return name;
-    }
-
-    public InputObject setName(String name) {
-        this.name = name;
-        return this;
-    }
 
     public String getGreeting() {
         return greeting;

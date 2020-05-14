@@ -1,4 +1,4 @@
-package lambda;
+package org.enlighted.users.lambda;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -6,8 +6,10 @@ import javax.inject.Named;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
-@Named("test")
-public class TestLambda implements RequestHandler<InputObject, OutputObject> {
+import org.enlighted.users.service.ProcessingService;
+
+@Named("users")
+public class UsersLambda implements RequestHandler<InputObject, OutputObject> {
 
     @Inject
     ProcessingService service;
